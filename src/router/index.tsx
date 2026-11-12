@@ -10,7 +10,10 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Navigate to="/todos" replace /> },
       { path: 'todos', element: <TodoPage /> },
-      { path: '*', element: <NotFoundPage /> },
     ],
   },
+  {
+    path: '*',
+    element: <NotFoundPage />
+  }
 ])
