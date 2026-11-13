@@ -1,4 +1,6 @@
 @theme {
     --color-primary: #f9d900;
+    --color-primary-dark: color-mix(in oklab,var(--color-primary), black 30%);
     --color-secondary: #82a06c;
+    --color-secondary-dark: color-mix(in oklab,var(--color-secondary), black 30%);
 }

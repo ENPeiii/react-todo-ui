@@ -2,4 +2,11 @@
   body {
     @apply bg-[#28231e] text-white;
   }
+  * {
+    @apply focus:outline-hidden;
+  }
+  ul,
+  ol {
+    @apply list-none m-0 p-0;
+  }
 }

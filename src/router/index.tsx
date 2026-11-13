@@ -9,7 +9,11 @@ export const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <Navigate to="/todos" replace /> },
-      { path: 'todos', element: <TodoPage /> },
+      { 
+        path: 'todos',
+        element: <TodoPage />,
+        handle: { title: '待辦清單' }
+      },
     ],
   },
   {

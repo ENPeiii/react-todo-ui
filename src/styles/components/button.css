@@ -1,0 +1,14 @@
+@layer components {
+  button {
+    @apply cursor-pointer transition-colors duration-200;
+    &.btn{
+     @apply bg-primary p-2 enabled:hover:bg-primary-dark rounded-2xl
+    }
+    &.icon {
+      @apply enabled:hover:text-secondary
+    }
+    &:disabled {
+      @apply bg-primary/10 cursor-not-allowed;
+    }
+  }
+}
